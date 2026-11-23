@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+credentials.*.json
+secrets.json
+ref-figma/

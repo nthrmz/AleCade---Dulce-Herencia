@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AleCade, panadería y repostería artesanal con tradición familiar en Cochabamba."
+    />
+    <meta name="theme-color" content="#fff7f4" />
+    <title>AleCade — Dulce Herencia</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" data-theme="light">
+      <a class="skip-link" href="#contenido">Saltar al contenido</a>
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand-link" href="#inicio" aria-label="AleCade, ir al inicio">
+            <img src="./img/logohorizontal-guindo.png" alt="AleCade — Dulce Herencia" />
+          </a>
+          <nav class="desktop-nav" aria-label="Navegación principal">
+            <a class="nav-link" href="#inicio" data-route="home">Inicio</a>
+            <a class="nav-link" href="#productos" data-route="products">Productos</a>
+            <a class="nav-link" href="#pedidos" data-route="orders">Pedidos</a>
+            <a class="nav-link" href="#nosotros" data-route="about">Nosotros</a>
+            <a class="nav-link" href="#ideas" data-route="ideas">Dulces ideas</a>
+            <a class="nav-link" href="#contacto" data-route="contact">Contacto</a>
+          </nav>
+          <div class="header-actions">
+            <button type="button" class="theme-toggle" aria-label="Cambiar a modo oscuro">
+              <span aria-hidden="true">☾</span><span class="theme-label">Modo oscuro</span>
+            </button>
+            <a href="#pedidos" class="button button-small header-quote">Cotizar pedido</a>
+            <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+              <span aria-hidden="true">☰</span>
+            </button>
+          </div>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil" hidden>
+          <a class="mobile-menu-link" href="#inicio" data-route="home">Inicio</a>
+          <a class="mobile-menu-link" href="#productos" data-route="products">Productos</a>
+          <a class="mobile-menu-link" href="#pedidos" data-route="orders">Pedidos</a>
+          <a class="mobile-menu-link" href="#nosotros" data-route="about">Nosotros</a>
+          <a class="mobile-menu-link" href="#ideas" data-route="ideas">Dulces ideas</a>
+          <a class="mobile-menu-link" href="#contacto" data-route="contact">Contacto</a>
+        </nav>
+      </header>
+
+      <div id="contenido">
+        <main class="home-page route-panel" data-page="home"></main>
+        <main class="catalog-page route-panel" data-page="products" hidden></main>
+        <main class="product-detail-page route-panel" data-page="product" hidden></main>
+        <main class="order-page route-panel" data-page="orders" hidden></main>
+        <main class="confirmation-page route-panel" data-page="confirmation" hidden></main>
+        <main class="about-page route-panel" data-page="about" hidden></main>
+        <main class="ideas-page route-panel" data-page="ideas" hidden></main>
+        <main class="contact-page route-panel" data-page="contact" hidden></main>
+        <main class="not-found-page route-panel" data-page="notFound" hidden></main>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img src="./img/logohorizontal-crema.png" alt="AleCade — Dulce Herencia" loading="lazy" />
+            <p>Panadería y repostería artesanal creada con pasión generacional. Cada pieza se hornea con dedicación para compartir momentos dulces.</p>
+            <span class="footer-note">Hecho a mano, con tradición familiar</span>
+          </div>
+          <div>
+            <h2>Navegación</h2>
+            <ul class="footer-links">
+              <li><a href="#inicio">Inicio</a></li><li><a href="#productos">Productos</a></li>
+              <li><a href="#pedidos">Pedidos</a></li><li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#ideas">Dulces ideas</a></li><li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Atención en Cochabamba</h2>
+            <p>Pedidos personalizados y consultas de disponibilidad. La entrega se coordina al confirmar cada pedido.</p>
+            <p class="footer-contact-note">Enlaces y datos de contacto oficiales no incluidos en los archivos recibidos.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="current-year"></span> AleCade · Dulce Herencia</span>
+          <span>Panadería artesanal en Cochabamba, Bolivia</span>
+        </div>
+      </footer>
+      <nav class="mobile-bottom-nav" aria-label="Navegación móvil">
+        <a class="bottom-nav-link" href="#inicio" data-route="home"><span aria-hidden="true">⌂</span><span>Inicio</span></a>
+        <a class="bottom-nav-link" href="#productos" data-route="products"><span aria-hidden="true">▣</span><span>Productos</span></a>
+        <a class="bottom-nav-link" href="#pedidos" data-route="orders"><span aria-hidden="true">▤</span><span>Pedidos</span></a>
+        <a class="bottom-nav-link" href="#ideas" data-route="ideas"><span aria-hidden="true">✦</span><span>Ideas</span></a>
+        <a class="bottom-nav-link" href="#contacto" data-route="contact"><span aria-hidden="true">✉</span><span>Contacto</span></a>
+      </nav>
+    </div>
+    <script type="module" src="./src/data.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
